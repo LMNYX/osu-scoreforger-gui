@@ -1,0 +1,3 @@
+[submodule "scoreforger"]
+	path = scoreforger
+	url = https://github.com/LMNYX/osu-scoreforger
