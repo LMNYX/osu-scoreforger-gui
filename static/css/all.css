@@ -1,0 +1,18 @@
+main
+{
+    margin: 24px auto;
+    width: 60%;
+}
+
+.no-margin-container
+{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.possible-mods
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
