@@ -54,6 +54,12 @@ window.onload = async () =>
         wrapper.appendChild(label);
         possibleModsEl.appendChild(wrapper);
         
+        document.getElementById("submit-score-button").onclick = async (e) =>
+        {
+            e.preventDefault();
+            let score_data = GetScoreData();
+            await SubmitScore(score_data);
+        }
     }
 
 
@@ -75,6 +81,8 @@ window.onload = async () =>
             console.log(e);
             document.getElementById("beatmap-name").innerText = "Failed to get beatmap info";
         }
+        document.getElementById("submit-score-button").disabled = false;
+        document.getElementById("submit-score-button").classList.remove("disabled");
     }
 
     document.getElementById("user-auth-test").onclick = async (e) =>
