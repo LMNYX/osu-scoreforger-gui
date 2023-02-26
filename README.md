@@ -11,4 +11,4 @@ This is a GUI for the osu! Score Forger. It is written in Python 3.6 and uses Fl
 ## Build
 
 1. Install the project
-2. Run either `build.bat` or `build.sh` depending on your OS.
+2. Run `pyinstaller --noconfirm --onefile --console  "run.py"`
